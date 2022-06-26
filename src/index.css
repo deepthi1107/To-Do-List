@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Anek Malayalam';
+  font-size: xx-large;
+}
+
+*{
+	margin-top: 0;
+ 
+}
+
+li.done{
+	color: #e0e0e0;
+	font-style: italic;
+  text-decoration: line-through;
+}
+
+div.todo{
+	margin: auto;
+	width: 450px;
+	max-width: 100%;
+	background-color: white;
+
+	border-radius: 10px 100px / 120px;
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+div.todo h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+ul.todo-list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+
+
+ul.todo-list li{
+	display: flex;
+	padding: 10px;
+	background-color: rgb(145, 190, 222);
+    transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+
+ul.todo-list li .item-title {
+    flex: 1 1 auto;
+}
+
+button{
+	text-decoration: none;
+    color: #fff;
+    background-color: #000000;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+    margin-left: 2px;
+}
+
+button:hover{
+    background-color: #ffffff;
+    color: black;
+}
+button:focus{
+    background-color: #410cec;
+}
+
+.todo-form{
+	display: flex;
+}
+
+input[type="text"] {
+    font-size: 14px;
+    /* padding: 9px; */
+    padding-left: 5px;
+    flex: 1 1 auto;
+    border-radius: 15px;
+}
